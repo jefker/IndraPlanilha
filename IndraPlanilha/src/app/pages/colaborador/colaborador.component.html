@@ -1,0 +1,45 @@
+<div class="background">
+    <div class="grid">
+        <div class="cabecalho col-6">
+            <p>{{usuario.id}}</p>
+            <h2>{{usuario.nome}}</h2>
+            <p>{{usuario.rol}}</p>
+        </div>
+        
+        <div class="metas col-6">
+            <div class="numberCircle">{{usuario.porcentagem}}</div>
+            <p>USTIBB enviado</p>
+            
+            <div class="numberCircle">{{UstibbRestante}}</div>
+            <p>USTIBB restante até a meta</p>
+        </div>
+
+        <div class="knob col-12 md:col-12">
+            <div class="fadein animation-duration-500 animation-iteration-1">
+                <p-knob
+                    [(ngModel)]="usuario.porcentagem"
+                    valueTemplate="{value}%"
+                    [readonly]="true"
+                    textColor="#004254"
+                    [size]="350"
+                    [strokeWidth]="20"
+                    valueColor="#03657C" rangeColor="#FFC033">
+                </p-knob>
+            </div>
+        </div>
+        <div class="data col-12 md:col-12 fadeinup animation-ease-in-out animation-duration-300 animation-iteration-1">
+            <p>{{currentDate | date:'longDate':'pt-BR'}}</p>
+        </div>
+
+        <div class="retornar col-2">
+            <button pButton pRipple type="button" label="RETORNAR" class="botao_retornar p-button-outlined p-button-secondary" routerLink="/progresso"></button>
+        </div>
+        <div class="retornar col-3">
+            <button pButton pRipple type="button" label="TAREFAS ADICIONADAS" class="botao_tarefas p-button-outlined p-button-secondary" routerLink="tarefas"></button>
+        </div>
+        <div class="adicionar col-7">
+            <button pButton pRipple type="button" label="ADICIONAR TAREFA" class="botao_adicionar" (click)="showDynamicDialog()"></button>
+        </div>
+    </div>
+</div>
+

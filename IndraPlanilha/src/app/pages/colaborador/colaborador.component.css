@@ -1,0 +1,135 @@
+.background {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.grid {
+    width: 1130px;
+}
+
+h2 {
+    color: #004254;
+    font-weight: bold;
+    margin: 0 -1px;
+}
+
+.cabecalho p{
+    margin: 0 0 -2px 0;
+    color: #868686;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.metas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.metas p{
+    margin: 0 0 0 10px;
+}
+
+.metas p:nth-child(2) {
+    color: #004254;
+    font-weight: bold;
+}
+
+.metas p:nth-child(4) {
+    color: #868686;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding-top: 7px;
+
+    text-align: center;
+
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+}
+
+.numberCircle:nth-child(1) {
+    background: #03657C;
+    color: white;
+}
+
+.numberCircle:nth-child(3) {
+    background: #FFC033;
+    color: #004254;
+    margin-left: 30px;
+}
+
+.knob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+::ng-deep .p-knob-text {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.data p{
+    color: #868686;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -2vh;
+}
+
+.botao_retornar {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #868686;
+    height: 40px;
+    width: 130px;
+    color: #868686;
+    font-size: 13px;
+}
+
+.botao_tarefas {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #868686;
+    height: 40px;
+    width: 200px;
+    color: #868686;
+    font-size: 13px;
+}
+
+.botao_adicionar {
+    outline: none;
+    height: 40px;
+    width: 180px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_adicionar:hover {
+    background-color: #002d3a;
+}
+
+.adicionar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+::ng-deep .card {
+    border: none;
+}

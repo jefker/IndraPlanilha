@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #004254;
+    margin-top: 5vh;
+}
+
+.container-fluid {
+    max-width: 1140px;
+    /* padding: 0; */
+    display: flex;
+    align-items: center;
+    height: 90px;
+    color: white;
+}
+
+a {
+    color: white;
+    margin-right: 4.5vh;
+}
+
+.indra_logo img{
+    width: 73px;
+    height: auto;
+    margin-bottom: 7.5px;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 10px;
+}

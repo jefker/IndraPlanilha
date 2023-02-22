@@ -1,0 +1,91 @@
+.background {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.grid {
+    width: 1130px;
+}
+
+::ng-deep .progressgreen .p-progressbar .p-progressbar-value {
+    background: #19D02B;
+}
+
+::ng-deep .progressyellow .p-progressbar .p-progressbar-value {
+    background: #FFC033;
+}
+
+::ng-deep .progressred .p-progressbar .p-progressbar-value {
+    background: #FF3333;
+}
+
+h2 {
+    color: #004254;
+    font-weight: bold;
+}
+
+.cabecalho p{
+    margin: 0;
+    color: #8d8d8d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.metas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.metas p{
+    margin: 0 0 0 10px;
+}
+
+.metas p:nth-child(2) {
+    color: #004254;
+    font-weight: bold;
+}
+
+.metas p:nth-child(4) {
+    color: #868686;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding-top: 7px;
+
+    text-align: center;
+
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+}
+
+.numberCircle:nth-child(1) {
+    background: #03657C;
+    color: white;
+}
+
+.numberCircle:nth-child(3) {
+    background: #FFC033;
+    color: #004254;
+    margin-left: 30px;
+}
+
+.p-element.p-sortable-column {
+    background-color: white;
+    color: #868686;
+    font-weight: normal;
+}
+
+.colaboradores {
+    margin: 3vh 0;
+}
+
+::ng-deep .p-selectable-row {
+    border: 1px solid #dee2e6;
+}
+
+

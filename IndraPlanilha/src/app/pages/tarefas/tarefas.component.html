@@ -1,0 +1,118 @@
+<p-toast></p-toast>
+
+<p-confirmDialog #cd header="Excluir tarefa" [style]="{width: '500px'}">
+    <ng-template pTemplate="footer">
+        <div class="confirmacao_botoes">
+            <button type="button" pButton label="CANCELAR" class="botao_cancelar p-button-danger" (click)="cd.reject()"></button>
+            <button type="button" pButton label="CONFIRMAR" class="botao_confirmar" (click)="cd.accept()"></button>
+        </div>
+    </ng-template>
+</p-confirmDialog>
+
+<div class="background">
+    <div class="grid">
+        <div class="cabecalho col-6">
+            <h2>Tarefas adicionadas</h2>
+            <p>{{usuario.nome}}</p>
+        </div>
+        
+        <div class="metas col-6">
+            <div class="numberCircle">{{metaAtingida}}</div>
+            <p>Atingiram a meta</p>
+            
+            <div class="numberCircle">{{metaNaoAtingida}}</div>
+            <p>Faltam atingir a meta</p>
+        </div>
+        
+        <div class="colaboradores col-12">
+            <p-table #dt2 [value]="tarefas" dataKey="id" styleClass="p-datatable-customers" [rowHover]="true"
+                [rows]="6" [showCurrentPageReport]="true" [loading]="loading" responsiveLayout="scroll"
+                [paginator]="true" currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} tarefas"
+                [filterDelay]="0" [globalFilterFields]="['id','disciplina', 'atividade', 'quantidade', 'ustibb']">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th pSortableColumn="id">
+                            <div class="flex justify-content-between align-items-center">
+                                ID
+                                <!-- <p-sortIcon field="id"></p-sortIcon> -->
+                                <!-- <p-columnFilter type="text" field="id" display="menu" class="ml-auto"></p-columnFilter> -->
+                            </div>
+                        </th>
+                        <th pSortableColumn="disciplina">
+                            <div class="flex justify-content-between align-items-center">
+                                Disciplina
+                                <!-- <p-sortIcon field="nome"></p-sortIcon> -->
+                            </div>
+                        </th>
+                        <th pSortableColumn="atividade">
+                            <div class="flex justify-content-between align-items-center">
+                                Atividade
+                                <!-- <p-sortIcon field="rol"></p-sortIcon> -->
+                            </div>
+                        </th>
+                        <th pSortableColumn="quantidade" >
+                            <div class="flex justify-content-between align-items-center">
+                                Quantidade
+                                <!-- <p-sortIcon field="porcentagem"></p-sortIcon> -->
+                            </div>
+                        </th>
+                        <th pSortableColumn="ustibb">
+                            <div class="flex justify-content-between align-items-center">
+                                USTIBB Total
+                                <!-- <p-sortIcon field="porcentagem"></p-sortIcon> -->
+                            </div>
+                        </th>
+                        <th pSortableColumn="icones">
+                            <div class="flex justify-content-between align-items-center">
+                                <!-- <p-sortIcon field="porcentagem"></p-sortIcon> -->
+                            </div>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-tarefa>
+                    <tr class="p-selectable-row">
+                        <td>
+                            <span class="p-column-title">ID</span>
+                            {{tarefa.id}}
+                        </td>
+                        <td>
+                            <span class="p-column-title">Disciplina</span>
+                            {{tarefa.disciplina}}
+                        </td>
+                        <td>
+                            <span class="p-column-title">Atividade</span>
+                            {{tarefa.atividade}}
+                        </td>
+                        <td>
+                            <span class="p-column-title">Quantidade</span>
+                            {{tarefa.quantidade}}
+                        </td>
+                        <td>
+                            <span class="p-column-title">USTIBB Total</span>
+                            {{tarefa.ustibb}}
+                        </td>
+                        <td>
+                            <span class="p-column-title">Icones</span>
+                            <a target="_blank" (click)="excluir()" class="excluir_tarefa"><i class="pi pi-trash"></i></a>
+                            <a target="_blank"><i class="pi pi-pencil"></i></a>
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td colspan="8">Nenhum colaborador encontrado.</td>
+                    </tr>
+                </ng-template>
+            </p-table>    
+        </div>
+
+        <div class="grid">
+            <div class="retornar col-6">
+                <button pButton pRipple type="button" label="RETORNAR" class="botao_retornar p-button-outlined p-button-secondary" routerLink="/progresso/{{usuario.id}}"></button>
+            </div>
+            <div class="adicionar col-6">
+                <button pButton pRipple type="button" label="ADICIONAR TAREFA" class="botao_adicionar" (click)="showDynamicDialog()"></button>
+            </div>
+        </div>
+    </div>
+</div>

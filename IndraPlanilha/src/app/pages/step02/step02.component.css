@@ -1,0 +1,51 @@
+::ng-deep .card {
+    overflow-x: hidden;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    margin: -10px 0;
+    width: 850px;
+}
+
+.inputleft {
+    margin-right: 15px;
+}
+
+.label_input {
+    color: #868686;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.botao_seguinte {
+    outline: none;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_seguinte:hover {
+    background-color: #002d3a;
+}
+
+.seguinte {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rodape {
+    padding-left: 30px;
+    padding-top: 15px;
+    max-width: 825px;
+}
+
+.p-inputtext {
+    background: #e7e7e7;
+}

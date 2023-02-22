@@ -1,0 +1,24 @@
+<div class="background">
+  <div class="home">
+    <div class="login">
+      <div class="logo">
+        <img src ="../../../assets/image/indra_logo.png" alt="Indra">
+        <h2>Planilha</h2>
+      </div>
+
+      <h3>Acesso aos serviços de OF da Indra</h3>
+      
+      <p>Usuário</p>
+      <div class="input-group">
+        <input [(ngModel)]="usuario.email" type="text" pInputText class="input">
+      </div>
+
+      <p>Senha</p>
+      <div class="input-group">
+        <input [(ngModel)]="usuario.senha" type="password" pInputText class="input">
+      </div>
+
+      <button class="btn btn-primary cursor-pointer" type="button" (click)="fazerLogin()">Entrar</button>
+    </div>
+  </div>
+</div>

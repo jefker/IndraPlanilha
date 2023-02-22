@@ -1,0 +1,21 @@
+.grid {
+    display: flex;
+    justify-content: center;
+    margin: -10px 0;
+    width: 850px;
+}
+
+.inputleft {
+    margin-right: 15px;
+}
+
+.label_input {
+    color: #868686;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.p-inputtext {
+    background: #e7e7e7;
+}

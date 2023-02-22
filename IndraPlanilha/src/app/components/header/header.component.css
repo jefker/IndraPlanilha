@@ -1,0 +1,86 @@
+h2 {
+    color: #FFC033;
+    font-size: 27px;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #004254;
+    height: 90px;
+}
+
+.container-fluid {
+    max-width: 1140px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 90px;
+    height: 26px;
+    margin-bottom: 7.5px;
+}
+
+.p-input-icon-right {
+    margin-right: 70px;
+}
+
+input {
+    height: 20px;
+    border-radius: 20px;
+    background-color: #03657C;
+    border-color: #03657C;
+}
+
+i.bi.bi-search {
+    margin: -11px 3px 0px;
+    color: white;
+}
+
+i.bi.bi-question-circle {
+    margin-right: 20px;
+    color: white;
+}
+
+i.bi.bi-question-circle:hover {
+    color: #FFC033;
+    transition: 0.3s;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-texto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10px;
+}
+
+.perfil-texto span{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.perfil-texto b{
+    color: #FFC033;
+}
+
+.perfil-texto a{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: -2px;
+}
+
+.perfil-texto a:hover{
+    color: #FFC033;
+    text-decoration: none;
+    transition: 0.3s;
+}

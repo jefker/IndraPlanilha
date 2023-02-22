@@ -1,0 +1,25 @@
+<p-toast></p-toast>
+
+<div class="card">
+    <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="false"></p-steps>
+    <router-outlet></router-outlet>
+
+    <div class="rodape grid">
+        <div class="retornar col-6">
+            <button *ngIf="activeIndex > 0" pButton pRipple type="button" label="RETORNAR" class="botao_seguinte" (click)="returnPage()"></button>
+        </div>
+        <div class="seguinte col-6">
+            <button *ngIf="activeIndex < 2" pButton pRipple type="button" label="SEGUINTE" class="botao_seguinte" (click)="nextPage()"></button>
+            <button *ngIf="activeIndex >= 2" pButton pRipple type="button" label="ENVIAR" class="botao_seguinte" (click)="enviar()"></button>
+        </div>
+    </div>
+</div>
+
+<p-confirmDialog #cd header="Confirmação" [style]="{width: '500px'}">
+    <ng-template pTemplate="footer">
+        <div class="confirmacao_botoes">
+            <button type="button" pButton label="CANCELAR" class="botao_cancelar p-button-danger" (click)="cd.reject()"></button>
+            <button type="button" pButton label="CONFIRMAR" class="botao_seguinte" (click)="cd.accept()"></button>
+        </div>
+    </ng-template>
+</p-confirmDialog>

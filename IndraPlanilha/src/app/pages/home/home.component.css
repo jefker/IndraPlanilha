@@ -1,0 +1,89 @@
+h2 {
+    color: #FFC033;
+    font-size: 27px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 17.4px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    margin: 25px 72px 0px;
+}
+
+.background {
+    background: url("../../../assets/image/fundoM03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    text-align: center;
+    color: white;
+    background-color: #03657C;
+    height: auto;
+    width: 425px;
+    border-radius: 20px;
+}
+
+.logo {
+    margin: 50px auto 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 90px;
+    height: 26px;
+    margin-bottom: 7.5px;
+}
+
+.input-group {
+    margin: 6px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    height: 40px;
+    width: 280px;
+}
+
+.btn.btn-primary,
+.btn.btn-primary:focus,
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  color: #004254;
+  background-color: #FFC033;
+  border-color: #FFC033;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 30px 0px 60px;
+}
+
+.btn.btn-primary:hover {
+    background-color: hsl(41, 100%, 50%);
+    border-color: hsl(41, 100%, 50%);
+}

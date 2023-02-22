@@ -1,0 +1,101 @@
+.grid {
+    display: flex;
+    justify-content: center;
+    margin: -10px 0;
+    width: 850px;
+}
+
+.label_input {
+    color: #868686;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 241px;
+}
+
+.botao_seguinte {
+    outline: none;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_seguinte:hover {
+    background-color: #002d3a;
+}
+
+.seguinte {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rodape {
+    padding-left: 30px;
+    padding-top: 15px;
+    max-width: 825px;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+    font-size: 1.5rem;
+    color: #004254;
+}
+
+::ng-deep .p-confirm-dialog .p-dialog-content {
+    text-align: center;
+}
+
+::ng-deep .p-dialog.p-confirm-dialog .p-confirm-dialog-message {
+    margin: 0 3rem;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+    font-size: 17px;
+    color: #737373;
+}
+
+.confirmacao_botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.botao_cancelar {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #FF7B7B;
+    height: 40px;
+    width: 130px;
+    color: #FF7B7B;
+    background-color: #FFF5EF;
+    font-size: 13px;
+}
+
+.botao_confirmar {
+    outline: none;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_confirmar:hover {
+    background-color: #002d3a;
+}
+
+::ng-deep .p-dialog .p-dialog-footer button{
+    margin: 0 20px;
+}
+
+::ng-deep .p-inputtext {
+    background: white;
+}

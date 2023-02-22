@@ -1,0 +1,32 @@
+<div class="stepsdemo-content fadein animation-duration-700 animation-iteration-1">
+    <p-card>
+        <ng-template pTemplate="content">
+            <form [formGroup]="formGroup" class="grid p-fluid">
+                <div class="inputleft col-3">
+                    <label for="username1" class="label_input">ID Tarefa</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+                <div class="col-6">
+                    <label for="username1" class="label_input">Disciplina</label>
+                    <p-dropdown [options]="cidades" formControlName="cidade" optionLabel="name"></p-dropdown>
+                </div>
+            
+                <div class="inputleft col-3">
+                    <label for="username1" class="label_input">Atividade</label>
+                    <p-dropdown [options]="cidades" formControlName="cidade" optionLabel="name"></p-dropdown>
+                </div>
+                <div class="col-6">
+                    <label for="username1" class="label_input">Descrição</label>
+                    <p-dropdown [options]="cidades" formControlName="cidade" optionLabel="name"></p-dropdown>
+                </div>
+            
+                <div class="inputleft col-3">
+                    <label for="username1" class="label_input">Plataforma</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+                <div class="col-6"></div>
+            </form>
+        </ng-template>
+    </p-card>
+</div>
+

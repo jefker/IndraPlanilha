@@ -1,0 +1,84 @@
+{
+    "Colaboradores": [
+        {
+            "id": 855319,
+            "nome": "Kalenne P. Sousa",
+            "rol": "Software Engineer",
+            "porcentagem": 63
+        },
+
+        {
+            "id": 855320,
+            "nome": "Kevin da S. Ferreira",
+            "rol": "Software Engineer",
+            "porcentagem": 100
+        },
+
+        {
+            "id": 855318,
+            "nome": "Luiz H. S. Cavalcanti",
+            "rol": "Software Engineer",
+            "porcentagem": 80
+        },
+
+        {
+            "id": 855313,
+            "nome": "Jefte K. M. Mendonça",
+            "rol": "Software Engineer",
+            "porcentagem": 25
+        },
+
+        {
+            "id": 855317,
+            "nome": "Jobson J. O. R. Toscano",
+            "rol": "Software Engineer",
+            "porcentagem": 41
+        },
+ 
+        {
+            "id": 855319,
+            "nome": "Ana C. G. Santos",
+            "rol": "Software Engineer",
+            "porcentagem": 48
+        },
+
+        {
+            "id": 855319,
+            "nome": "Andre G. S. Azevedo",
+            "rol": "Software Engineer",
+            "porcentagem": 5
+        },
+
+        {
+            "id": 855319,
+            "nome": "Andre A. G. Viana",
+            "rol": "Software Engineer",
+            "porcentagem": 79
+        },
+
+        {
+            "id": 855319,
+            "nome": "Lamarck F. Martins",
+            "rol": "Software Engineer",
+            "porcentagem": 100
+        }
+    ],
+
+    "Tarefas": [
+        {
+            "id": 1,
+            "disciplina": "User Experience",
+            "atividade": "Usabilidade",
+            "quantidade": 2,
+            "ustibb": 40
+        },
+        
+        {
+            "id": 2,
+            "disciplina": "Implementação de Software",
+            "atividade": "Plataforma Distribuída",
+            "quantidade": 3,
+            "ustibb": 30
+        }
+    ]
+}

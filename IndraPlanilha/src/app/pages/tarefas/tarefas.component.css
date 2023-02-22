@@ -1,0 +1,203 @@
+.background {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.grid {
+    width: 1130px;
+}
+
+::ng-deep .progressgreen .p-progressbar .p-progressbar-value {
+    background: #19D02B;
+}
+
+::ng-deep .progressyellow .p-progressbar .p-progressbar-value {
+    background: #FFC033;
+}
+
+::ng-deep .progressred .p-progressbar .p-progressbar-value {
+    background: #FF3333;
+}
+
+h2 {
+    color: #004254;
+    font-weight: bold;
+}
+
+.cabecalho p{
+    margin: 0;
+    color: #8d8d8d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.metas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.metas p{
+    margin: 0 0 0 10px;
+}
+
+.metas p:nth-child(2) {
+    color: #004254;
+    font-weight: bold;
+}
+
+.metas p:nth-child(4) {
+    color: #868686;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding-top: 7px;
+
+    text-align: center;
+
+    font: 20px Arial, sans-serif;
+    font-weight: bold;
+}
+
+.numberCircle:nth-child(1) {
+    background: #03657C;
+    color: white;
+}
+
+.numberCircle:nth-child(3) {
+    background: #FFC033;
+    color: #004254;
+    margin-left: 30px;
+}
+
+.p-element.p-sortable-column {
+    background-color: white;
+    color: #868686;
+    font-weight: normal;
+}
+
+.colaboradores {
+    margin: 3vh 0;
+}
+
+::ng-deep .p-selectable-row {
+    border: 1px solid #dee2e6;
+}
+
+::ng-deep .p-dialog .p-dialog-header .p-dialog-title {
+    font-size: 1.5rem;
+    color: #004254;
+}
+
+::ng-deep .p-confirm-dialog .p-dialog-content {
+    text-align: center;
+}
+
+::ng-deep .p-dialog.p-confirm-dialog .p-confirm-dialog-message {
+    margin: 0 3rem;
+}
+
+::ng-deep .p-dialog .p-dialog-content {
+    font-size: 17px;
+    color: #737373;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.confirmacao_botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.botao_cancelar {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #FF7B7B;
+    height: 40px;
+    width: 130px;
+    color: #FF7B7B;
+    background-color: #FFF5EF;
+    font-size: 13px;
+}
+
+.botao_confirmar {
+    outline: none;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_confirmar:hover {
+    background-color: #002d3a;
+}
+
+::ng-deep .p-dialog .p-dialog-footer button{
+    margin: 0 20px;
+}
+
+.botao_retornar {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #868686;
+    height: 40px;
+    width: 130px;
+    color: #868686;
+    font-size: 13px;
+}
+
+.botao_tarefas {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #868686;
+    height: 40px;
+    width: 200px;
+    color: #868686;
+    font-size: 13px;
+}
+
+.botao_adicionar {
+    outline: none;
+    height: 40px;
+    width: 180px;
+    color: white;
+    background-color: #004254;
+    font-size: 13px;
+    border: none;
+}
+
+.botao_adicionar:hover {
+    background-color: #002d3a;
+}
+
+.adicionar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.excluir_tarefa {
+    padding-right: 15px;
+}
+
+i.pi.pi-trash:hover {
+    color: red;
+    transition: 0.1s;
+}
+
+i.pi.pi-pencil:hover {
+    color: #00749e;
+    transition: 0.1s;
+}
+
+::ng-deep .card {
+    border: none;
+}

@@ -1,0 +1,36 @@
+<div class="stepsdemo-content fadein animation-duration-700 animation-iteration-1">
+    <p-card>
+        <ng-template pTemplate="content">
+            <form [formGroup]="formGroup" class="grid p-fluid">
+                <div class="inputleft col-6">
+                    <label for="username1" class="label_input">Complexidade</label>
+                    <p-dropdown [options]="cidades" formControlName="cidade" optionLabel="name"></p-dropdown>
+
+                </div>
+                <div class="col-3">
+                    <label for="username1" class="label_input">Componente</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+            
+                <div class="inputleft col-3">
+                    <label for="username1" class="label_input">Unidade de medida</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+                <div class="col-6">
+                    <label for="username1" class="label_input">Descrição da complexidade</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+            
+                <div class="inputleft col-3">
+                    <label for="username1" class="label_input">Quantidade</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+                <div class="col-3">
+                    <label for="username1" class="label_input">USTIBB</label>
+                    <input id="disabled-input" type="text" pInputText formControlName="desabilitar"/>
+                </div>
+                <div class="col-3"></div>
+            </form>
+        </ng-template>
+    </p-card>
+</div>
